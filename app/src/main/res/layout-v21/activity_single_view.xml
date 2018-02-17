@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    tools:context="com.a5.ngenemichael.quotes.SingleView"
+    android:gravity="center"
+    android:nestedScrollingEnabled="false"
+    >
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:id="@+id/linearLayout2"
+            android:padding="10dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:background="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="30dp"
+                android:elevation="10dp"
+                android:id="@+id/view"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:elevation="10dp"
+                    android:background="@drawable/tqqa"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:nestedScrollingEnabled="true">
+
+
+                    <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/scrollView"
+                        android:padding="2dp"
+                        android:foregroundGravity="center">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:background="@drawable/txbg"
+                            android:padding="10dp"
+                            android:id="@+id/linearLayout"
+                            android:nestedScrollingEnabled="true"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="New Text"
+                                android:id="@+id/singleq"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:padding="2dp"
+                                android:textColor="#000865"
+                                android:gravity="center"
+                                android:nestedScrollingEnabled="true"
+                                android:layout_gravity="center_horizontal"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="New Text"
+                                android:id="@+id/author"
+                                android:background="@drawable/txbg"
+                                android:textColor="#c10000"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="2dp"
+                                android:paddingBottom="2dp"
+                                android:layout_gravity="center_horizontal"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/no"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/txbg"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="     "
+                                android:textColor="#c10000"
+                                android:paddingTop="2dp"
+                                android:paddingBottom="2dp"/>
+                        </LinearLayout>
+                    </ScrollView>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/view2"
+            app:cardCornerRadius="20dp"
+            android:elevation="100dp"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_alignParentStart="true"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:weightSum="100"
+                android:gravity="center"
+                android:id="@+id/linearLayout3"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_alignParentEnd="true"
+                android:background="#22242e">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/bf"
+                    android:layout_weight="25"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@android:drawable/ic_media_rew"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:id="@+id/share"
+                    android:layout_weight="25"
+                    android:src="@android:drawable/ic_menu_share"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/random"
+                    android:layout_weight="25"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@android:drawable/ic_popup_sync"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/ff"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_weight="25"
+                    android:src="@android:drawable/ic_media_ff"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+</RelativeLayout>
